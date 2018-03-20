@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
 
+import MainLayout from '../layouts/main'
+
 class Wineries extends Component {
   render() {
     return (
-      <div>Wineries Page</div>
+      <MainLayout>
+        <div>Wineries Page</div>
+      </MainLayout>
     )
   }
 }

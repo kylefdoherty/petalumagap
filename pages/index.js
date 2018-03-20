@@ -1,25 +1,52 @@
 import React, { Component } from 'react'
-import Head from 'next/head'
 import {
-  Button,
-  Container,
+  Section,
+  Columns,
+  Column,
+  Notification,
+  Card,
+  CardImage,
+  CardContent,
+  Image,
+  Title,
+  Subtitle,
 } from 'bloomer'
 
-import Nav from '../components/nav'
+import MainLayout from '../layouts/main'
+import MainHero from '../components/hero'
+import WineryCard from '../components/winery-card'
 
 class Index extends Component {
   render() {
     return (
-      <main>
-        <Head>
-          <title>Title</title>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
-        </Head>
-        <Container isFluid style={{ margin: '0', height: '2000px' }}>
-          <Nav />
-        </Container>
-      </main>
+      <MainLayout>
+        <MainHero
+          title="Petaluma Gap AVA"
+          subTitle="The newest and most unique American Viticulture Area in U.S."
+          ctaText="Checkout the Wineries"
+          ctaHref="/wineries"
+        />
+        <Section className="featured-wineries">
+          <Columns isCentered isMultiline>
+            {
+              [1,2,3,4].map(i => {
+                return(
+                  <WineryCard
+                    key={i}
+                    imgSrc="https://via.placeholder.com/1280x960"
+                    cardSize={5}
+                    subtitleSize={5}
+                    titleSize={3}
+                    title="The Card Title"
+                    subTitle="The Subtitle"
+                  />
+                )
+              })
+            }
+          </Columns>
+        </Section>
+        <div style={{ background: 'honeydew', minHeight: '2000px' }}>HOME PAGE</div>
+      </MainLayout>
     )
   }
 }
