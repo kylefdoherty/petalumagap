@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import {
   Section,
   Columns,
   Column,
+  Content,
   Notification,
   Card,
   CardImage,
@@ -10,13 +11,18 @@ import {
   Image,
   Title,
   Subtitle,
+  CardHeader,
+  CardHeaderTitle,
 } from 'bloomer'
 
 import MainLayout from '../layouts/main'
 import MainHero from '../components/hero'
 import WineryCard from '../components/winery-card'
+import SectionTitle from '../components/section-title'
+import NewsCard from '../components/news-card'
 
-class Index extends Component {
+
+class HomePage extends Component {
   render() {
     return (
       <MainLayout>
@@ -27,6 +33,7 @@ class Index extends Component {
           ctaHref="/wineries"
         />
         <Section className="featured-wineries">
+          <SectionTitle title="Featured Wineries" />
           <Columns isCentered isMultiline>
             {
               [1,2,3,4].map(i => {
@@ -45,10 +52,29 @@ class Index extends Component {
             }
           </Columns>
         </Section>
+        <Section className="featured-news">
+          <SectionTitle title="In The News" />
+          <Columns isCentered isMultiline>
+            {
+              [1,2,3].map(i => {
+                return(
+                  <NewsCard
+                    key={i}
+                    pubDate="December 7, 2017"
+                    imgSrc="https://via.placeholder.com/1280x960"
+                    publicationName="Press Democrat"
+                    snippet="People Keep Asking If I’m Back, And I Haven’t Really Had An Answer, But Now, Yeah, I’m Thinking I’m Back."
+                    title="Article Title"
+                  />
+                )
+              })
+            }
+          </Columns>
+        </Section>
         <div style={{ background: 'honeydew', minHeight: '2000px' }}>HOME PAGE</div>
       </MainLayout>
     )
   }
 }
 
-export default Index
+export default HomePage
