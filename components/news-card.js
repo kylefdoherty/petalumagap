@@ -19,7 +19,7 @@ const NewsCard = ({
   pubDate,
 }) =>
   <Column isSize={isSize}>
-    <Card>
+    <Card style={{ borderBottom: '5px solid black' }}>
       <CardHeader>
         <CardHeaderTitle>
           {publicationName}
