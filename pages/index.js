@@ -4,6 +4,10 @@ import {
   Columns,
   Column,
   Content,
+  Hero,
+  HeroBody,
+  Container,
+  Button,
   Notification,
   Card,
   CardImage,
@@ -20,6 +24,7 @@ import MainHero from '../components/hero'
 import WineryCard from '../components/winery-card'
 import SectionTitle from '../components/section-title'
 import NewsCard from '../components/news-card'
+import MainFooter from '../components/footer'
 
 
 class HomePage extends Component {
@@ -52,6 +57,32 @@ class HomePage extends Component {
             }
           </Columns>
         </Section>
+        <Section className="gap-fetaures" style={{ padding: 0 }}>
+          <Hero className="main-hero" isColor='primary' isFullHeight>
+            <HeroBody>
+              <Container hasTextAlign='centered'>
+                <Subtitle>The Subtitle</Subtitle>
+                <Title>Title</Title>
+                <Button href="www.boom.com" style={{ marginTop: '2em' }}>
+                  Submit
+                </Button>
+                <div style={{ heigh: '200px', width: '90%', background: 'blue', margin: 'auto' }}>
+                  <Columns isCentered>
+                    <Column isSize='1/3'>
+                      Feature
+                    </Column>
+                    <Column isSize='1/3'>
+                      Feature
+                    </Column>
+                    <Column isSize='1/3'>
+                      Feature
+                    </Column>
+                  </Columns>
+                </div>
+              </Container>
+            </HeroBody>
+          </Hero>
+        </Section>
         <Section className="featured-news">
           <SectionTitle title="In The News" />
           <Columns isCentered isMultiline>
@@ -71,7 +102,7 @@ class HomePage extends Component {
             }
           </Columns>
         </Section>
-        <div style={{ background: 'honeydew', minHeight: '2000px' }}>HOME PAGE</div>
+        <MainFooter/>
       </MainLayout>
     )
   }
