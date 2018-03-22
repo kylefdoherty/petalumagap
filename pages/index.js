@@ -19,12 +19,13 @@ import {
   CardHeaderTitle,
 } from 'bloomer'
 
-import MainLayout from '../layouts/main'
-import MainHero from '../components/hero'
-import WineryCard from '../components/winery-card'
-import SectionTitle from '../components/section-title'
-import NewsCard from '../components/news-card'
+import FeatureColumn from '../components/feature-column'
 import MainFooter from '../components/footer'
+import MainHero from '../components/main-hero'
+import MainLayout from '../layouts/main'
+import NewsCard from '../components/news-card'
+import SectionTitle from '../components/section-title'
+import WineryCard from '../components/winery-card'
 
 
 class HomePage extends Component {
@@ -33,7 +34,7 @@ class HomePage extends Component {
       <MainLayout>
         <MainHero
           title="Petaluma Gap AVA"
-          subTitle="The newest and most unique American Viticulture Area in U.S."
+          subTitle="The newest and most unique American Viticulture Area in the U.S."
           ctaText="Checkout the Wineries"
           ctaHref="/wineries"
         />
@@ -61,24 +62,25 @@ class HomePage extends Component {
           <Hero className="main-hero" isColor='primary' isFullHeight>
             <HeroBody>
               <Container hasTextAlign='centered'>
-                <Subtitle>The Subtitle</Subtitle>
+                <p className="main-hero__sub-title">
+                  Sonoma Coast, California
+                </p>
                 <Title>Title</Title>
-                <Button href="www.boom.com" style={{ marginTop: '2em' }}>
-                  Submit
-                </Button>
-                <div style={{ heigh: '200px', width: '90%', background: 'blue', margin: 'auto' }}>
-                  <Columns isCentered>
-                    <Column isSize='1/3'>
-                      Feature
-                    </Column>
-                    <Column isSize='1/3'>
-                      Feature
-                    </Column>
-                    <Column isSize='1/3'>
-                      Feature
-                    </Column>
+                <Container isFluid style={{ width: '100%', margin: '0' }}>
+                  <Columns isCentered style={{ justifyContent: 'space-around' }}>
+                    {
+                      [1,2,3].map(feature => {
+                        return(
+                          <FeatureColumn
+                            header="Feature"
+                            description="Not only is Petaluma Gap the newest AVA but it's also the closest AVA to San Francico."
+                            iconClass="icon-cloud-wind"
+                          />
+                        )
+                      })
+                    }
                   </Columns>
-                </div>
+                </Container>
               </Container>
             </HeroBody>
           </Hero>

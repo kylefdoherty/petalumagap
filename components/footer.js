@@ -14,7 +14,10 @@ const MainFooter = () =>
         <Columns>
           <Column isFull>
             <p>
-              Made with<Icon hasTextColor="danger" className="fa fa-heart"></Icon>
+              Made with
+              <span>
+                <Icon hasTextColor="danger" className="fa fa-heart"></Icon>
+              </span>
               by <a>Kyle Doherty</a>
             </p>
           </Column>
