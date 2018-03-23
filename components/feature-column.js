@@ -23,21 +23,22 @@ const FeatureColumn = ({
   header,
   headerStyles,
   description,
+  descriptionStyles,
   iconClass,
-  iconStyle,
+  iconStyles,
 }) =>
   <Column isSize={colSize} style={colStyles || defaultcolStyles}>
     <Content>
       <span>
         <i
-          style={iconStyle || defaultIconStyles}
+          style={{...defaultIconStyles, ...iconStyles}}
           className={iconClass}
         />
       </span>
-      <h2 style={headerStyles || defaultHeaderStyles}>
+      <h2 style={{...defaultHeaderStyles, ...headerStyles}}>
         {header}
       </h2>
-      <p>
+      <p style={descriptionStyles}>
         {description}
       </p>
     </Content>

@@ -36,11 +36,19 @@ class Nav extends Component {
       minHeight: '4em',
     }
 
+    const logoStyles = {
+      marginRight: '5px',
+      marginLeft: '10px',
+      fontSize: '24px',
+      textTransform: 'uppercase',
+      fontWeight: 'bolder',
+    }
+
     return (
       <Navbar style={navBarStyles}>
         <NavbarBrand style={{ minHeight: '4em' }}>
-          <NavbarItem>
-            <img src="" style={{ marginRight: 5 }} />
+          <NavbarItem style={logoStyles}>
+            <img src="" />
             Petaluma Gap
           </NavbarItem>
           <NavbarBurger

@@ -58,14 +58,14 @@ class HomePage extends Component {
             }
           </Columns>
         </Section>
-        <Section className="gap-fetaures" style={{ padding: 0 }}>
-          <Hero className="main-hero" isColor='primary' isFullHeight>
-            <HeroBody>
+        <Section style={{ padding: 0 }}>
+          <Fragment>
+            <div className="main-hero">
               <Container hasTextAlign='centered'>
                 <p className="main-hero__sub-title">
                   Sonoma Coast, California
                 </p>
-                <Title>Title</Title>
+                <Title style={{ color: 'white', marginBottom: '2em' }}>Title</Title>
                 <Container isFluid style={{ width: '100%', margin: '0' }}>
                   <Columns isCentered style={{ justifyContent: 'space-around' }}>
                     {
@@ -73,6 +73,8 @@ class HomePage extends Component {
                         return(
                           <FeatureColumn
                             header="Feature"
+                            iconStyles={{ color: 'white' }}
+                            descriptionStyles={{ color: 'white' }}
                             description="Not only is Petaluma Gap the newest AVA but it's also the closest AVA to San Francico."
                             iconClass="icon-cloud-wind"
                           />
@@ -82,8 +84,28 @@ class HomePage extends Component {
                   </Columns>
                 </Container>
               </Container>
-            </HeroBody>
-          </Hero>
+            </div>
+            <style jsx>{`
+              .main-hero {
+                min-height: 700px;
+                background-image:
+                  linear-gradient(rgba(59,85,230, 0.70), rgba(59,85,230, 0.70)),
+                  url(/static/images/sonoma-coast-fog.jpg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+              .main-hero__sub-title {
+                color: white;
+                padding: 0 10px 0 10px;
+              }
+            `}</style>
+          </Fragment>
+
         </Section>
         <Section className="featured-news">
           <SectionTitle title="In The News" />

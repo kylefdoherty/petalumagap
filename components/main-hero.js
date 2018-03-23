@@ -23,7 +23,7 @@ class MainHero extends Component {
             <p className="main-hero__sub-title">
               {subTitle}
             </p>
-            <Button href={ctaHref} style={{ marginTop: '2em' }}>
+            <Button href={ctaHref} isSize="large" style={{ marginTop: '2em', background: '#3b55e6', border: '#3b55e6', color: 'white' }}>
               {ctaText}
             </Button>
           </Container>
