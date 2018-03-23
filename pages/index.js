@@ -26,6 +26,8 @@ import MainLayout from '../layouts/main'
 import NewsCard from '../components/news-card'
 import SectionTitle from '../components/section-title'
 import WineryCard from '../components/winery-card'
+import FeaturedWineries from '../containers/featured-wineries'
+import FeaturedNews from '../containers/featured-news'
 
 
 class HomePage extends Component {
@@ -38,26 +40,7 @@ class HomePage extends Component {
           ctaText="Checkout the Wineries"
           ctaHref="/wineries"
         />
-        <Section className="featured-wineries">
-          <SectionTitle title="Featured Wineries" />
-          <Columns isCentered isMultiline>
-            {
-              [1,2,3,4].map(i => {
-                return(
-                  <WineryCard
-                    key={i}
-                    imgSrc="https://via.placeholder.com/1280x960"
-                    cardSize={5}
-                    subtitleSize={5}
-                    titleSize={3}
-                    title="The Card Title"
-                    subTitle="The Subtitle"
-                  />
-                )
-              })
-            }
-          </Columns>
-        </Section>
+        <FeaturedWineries />
         <Section style={{ padding: 0 }}>
           <Fragment>
             <div className="main-hero">
@@ -107,25 +90,7 @@ class HomePage extends Component {
           </Fragment>
 
         </Section>
-        <Section className="featured-news">
-          <SectionTitle title="In The News" />
-          <Columns isCentered isMultiline>
-            {
-              [1,2,3].map(i => {
-                return(
-                  <NewsCard
-                    key={i}
-                    pubDate="December 7, 2017"
-                    imgSrc="https://via.placeholder.com/1280x960"
-                    publicationName="Press Democrat"
-                    snippet="People Keep Asking If I’m Back, And I Haven’t Really Had An Answer, But Now, Yeah, I’m Thinking I’m Back."
-                    title="Article Title"
-                  />
-                )
-              })
-            }
-          </Columns>
-        </Section>
+        <FeaturedNews />
         <MainFooter/>
       </MainLayout>
     )

@@ -9,6 +9,7 @@ import {
   Image,
   Title,
 } from 'bloomer'
+import truncate from 'truncate'
 
 const NewsCard = ({
   isSize='1/3',
@@ -32,7 +33,7 @@ const NewsCard = ({
         <Content>
           <Title isSize={3}>{title}</Title>
           <p>
-            {snippet}
+            {truncate(snippet, 190)}
           </p>
           <p>{pubDate}</p>
         </Content>

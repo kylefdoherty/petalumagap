@@ -10,26 +10,30 @@ import {
 
 const WineryCard = ({
   cardSize,
+  imgAlt,
   imgSrc,
   subtitleSize,
   titleSize,
   title,
   subTitle,
+  wineryUrl,
 }) =>
   <Column isSize={cardSize}>
-    <Card>
-      <CardImage>
-        <Image src={imgSrc} />
-      </CardImage>
-      <CardContent>
-        <Subtitle isSize={subtitleSize}>
-          {subTitle}
-        </Subtitle>
-        <Title isSize={titleSize}>
-          {title}
-        </Title>
-      </CardContent>
-    </Card>
+    <a href={wineryUrl} target="_blank">
+      <Card>
+        <CardImage>
+          <Image src={imgSrc} />
+        </CardImage>
+        <CardContent>
+          <Subtitle isSize={subtitleSize}>
+            {subTitle}
+          </Subtitle>
+          <Title isSize={titleSize}>
+            {title}
+          </Title>
+        </CardContent>
+      </Card>
+    </a>
   </Column>
 
 export default WineryCard

@@ -34,6 +34,7 @@ class Nav extends Component {
       borderBottom: 'solid 1px black',
       margin: '0',
       minHeight: '4em',
+      background: 'white',
     }
 
     const logoStyles = {
@@ -58,6 +59,7 @@ class Nav extends Component {
           />
         </NavbarBrand>
         <NavbarMenu
+          style={{ background: 'white' }}
           isActive={this.state.menuIsOpen}
         >
           <NavbarItem href='/'>Home</NavbarItem>
