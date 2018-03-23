@@ -31,7 +31,7 @@ const NewsCard = ({
       </CardImage>
       <CardContent>
         <Content>
-          <Title isSize={3}>{title}</Title>
+          <Title isSize={4}>{title}</Title>
           <p>
             {truncate(snippet, 190)}
           </p>
