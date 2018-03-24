@@ -8,15 +8,6 @@ import WineryCard from '../../components/winery-card'
 
 import { featuredWineries } from './data'
 
-// feature: 'Winery Feature',
-//     name: 'Kastania Vineyards',
-//     description: '',
-//     img: {
-//       url: '/static/images/wineries/kastania.jpg',
-//       altText: 'Kstania Vineyards',
-//     },
-//     website: 'http://www.kastaniavineyards.com/',
-
 const FeaturedWineries = () =>
   <Section className="featured-wineries">
     <SectionTitle title="Featured Wineries" />

@@ -31,7 +31,6 @@ class Nav extends Component {
 
   render() {
     const navBarStyles = {
-      borderBottom: 'solid 1px black',
       margin: '0',
       minHeight: '4em',
       background: 'white',

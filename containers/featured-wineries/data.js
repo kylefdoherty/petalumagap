@@ -1,6 +1,6 @@
 const featuredWineries = [
   {
-    feature: 'Winery Feature',
+    feature: 'Estate Grown Grapes',
     name: 'Kastania Vineyards',
     description: '',
     img: {
@@ -10,7 +10,7 @@ const featuredWineries = [
     website: 'http://www.kastaniavineyards.com/',
   },
   {
-    feature: 'Winery Feature',
+    feature: 'A Slice of History',
     name: 'Three Sticks',
     description: '',
     img: {
