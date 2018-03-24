@@ -25,11 +25,11 @@ import { gapFeatures } from './data'
 const GapFeatures = () =>
   <Section style={{ padding: 0 }}>
     <div className="main-hero">
-      <Container hasTextAlign='centered' style={{ paddingTop: '2em', paddingBottom: '2em' }}>
+      <Container hasTextAlign='centered' style={{ paddingTop: '3em', paddingBottom: '3em' }}>
         <p className="main-hero__sub-title">
           Sonoma Coast, California
         </p>
-        <Title style={{ color: 'white', marginBottom: '2em' }}>
+        <Title style={{ color: 'white', marginBottom: '2em', padding: '0 1em 0 1em' }}>
           Wine Forged From Wind & Fog
         </Title>
         <Container isFluid style={{ width: '100%', margin: '0' }}>
