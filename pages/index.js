@@ -20,15 +20,14 @@ import {
 } from 'bloomer'
 
 import FeatureColumn from '../components/feature-column'
-import MainFooter from '../components/footer'
+import FeaturedNews from '../containers/featured-news'
+import FeaturedWineries from '../containers/featured-wineries'
+import GapFeatures from '../containers/gap-features'
 import MainHero from '../components/main-hero'
 import MainLayout from '../layouts/main'
 import NewsCard from '../components/news-card'
 import SectionTitle from '../components/section-title'
 import WineryCard from '../components/winery-card'
-import FeaturedWineries from '../containers/featured-wineries'
-import FeaturedNews from '../containers/featured-news'
-import GapFeatures from '../containers/gap-features'
 
 
 class HomePage extends Component {
@@ -44,7 +43,6 @@ class HomePage extends Component {
         <FeaturedWineries />
         <GapFeatures />
         <FeaturedNews />
-        <MainFooter/>
       </MainLayout>
     )
   }

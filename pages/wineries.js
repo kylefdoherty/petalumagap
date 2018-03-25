@@ -32,18 +32,15 @@ import {
 } from 'bloomer'
 
 import MainLayout from '../layouts/main'
+import AllGapWineries from '../containers/all-gap-wineries'
 
 class Wineries extends Component {
   render() {
     return (
       <MainLayout>
-        <Hero isSize='medium'>
-          <HeroBody>
-              <Container hasTextAlign='centered'>
-                  <Title>Page Coming Soon</Title>
-              </Container>
-          </HeroBody>
-        </Hero>
+        <Container>
+          <AllGapWineries />
+        </Container>
       </MainLayout>
     )
   }
