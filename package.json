@@ -2,7 +2,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "static": "next build && next export"
   },
   "dependencies": {
     "bloomer": "^0.6.3",
