@@ -32,14 +32,35 @@ import WineryCard from '../components/winery-card'
 
 class HomePage extends Component {
   render() {
+    const ctaStyles = {
+      marginTop: '2em',
+      background: '#3b55e6',
+      border: '#3b55e6',
+      color: 'white',
+    }
+
+    const subTitleStyles = {
+      color: 'white',
+      padding: '0 10px 0 10px',
+    }
+
     return (
       <MainLayout>
-        <MainHero
-          title="Petaluma Gap AVA"
-          subTitle="The newest and most unique American Viticulture Area in the U.S."
-          ctaText="Checkout the Wineries"
-          ctaHref="/wineries"
-        />
+        <MainHero minHeight="100vh">
+          <Title style={{ color: 'white' }}>
+            Petaluma Gap AVA
+          </Title>
+          <p style={subTitleStyles}>
+            The newest and most unique American Viticulture Area in the U.S.
+          </p>
+          <Button
+            href="/wineries"
+            isSize="large"
+            style={ctaStyles}
+          >
+           Checkout the Wineries
+          </Button>
+        </MainHero>
         <FeaturedWineries />
         <GapFeatures />
         <FeaturedNews />

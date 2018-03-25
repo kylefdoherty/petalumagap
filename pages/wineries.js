@@ -32,15 +32,24 @@ import {
 } from 'bloomer'
 
 import MainLayout from '../layouts/main'
+import MainHero from '../components/main-hero'
 import AllGapWineries from '../containers/all-gap-wineries'
 
 class Wineries extends Component {
   render() {
+    const subTitleStyles = {
+      color: 'white',
+      padding: '0 10px 0 10px',
+    }
+
     return (
       <MainLayout>
-        <Container>
-          <AllGapWineries />
-        </Container>
+        <MainHero minHeight="400px">
+          <Title style={{ color: 'white' }}>
+            Petaluma Gap Wineries
+          </Title>
+        </MainHero>
+        <AllGapWineries />
       </MainLayout>
     )
   }

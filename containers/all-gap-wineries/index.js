@@ -10,7 +10,6 @@ import { wineries } from './data'
 
 const AllGapWineries = () =>
   <Section className="all-wineries">
-    <SectionTitle title="Petaluma Gap Wineries" />
     <Columns isCentered isMultiline>
       {
         wineries.map(winery => {
