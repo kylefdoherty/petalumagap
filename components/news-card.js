@@ -18,27 +18,30 @@ const NewsCard = ({
   title,
   snippet,
   pubDate,
+  url,
 }) =>
   <Column isSize={isSize}>
-    <Card style={{ borderBottom: '5px solid black' }}>
-      <CardHeader>
-        <CardHeaderTitle>
-          {publicationName}
-        </CardHeaderTitle>
-      </CardHeader>
-      <CardImage>
-        <Image src={imgSrc} />
-      </CardImage>
-      <CardContent>
-        <Content>
-          <Title isSize={4}>{title}</Title>
-          <p>
-            {truncate(snippet, 190)}
-          </p>
-          <p>{pubDate}</p>
-        </Content>
-      </CardContent>
-    </Card>
+    <a href={url} target="_blank">
+      <Card style={{ borderBottom: '5px solid black' }}>
+        <CardHeader>
+          <CardHeaderTitle>
+            {publicationName}
+          </CardHeaderTitle>
+        </CardHeader>
+        <CardImage>
+          <Image src={imgSrc} />
+        </CardImage>
+        <CardContent>
+          <Content>
+            <Title isSize={4}>{title}</Title>
+            <p>
+              {truncate(snippet, 190)}
+            </p>
+            <p>{pubDate}</p>
+          </Content>
+        </CardContent>
+      </Card>
+    </a>
   </Column>
 
 export default NewsCard

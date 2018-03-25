@@ -4,6 +4,7 @@ import {
 
 import Header from '../components/header'
 import Nav from '../components/nav'
+import MainFooter from '../components/footer'
 
 const defaultContainerStyles = {
   margin: '0',
@@ -21,6 +22,7 @@ const MainLayout = ({ children, containerStyles }) =>
     <Container isFluid style={containerStyles || defaultContainerStyles}>
       <Nav />
       {children}
+      <MainFooter/>
     </Container>
   </main>
 

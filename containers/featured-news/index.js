@@ -23,6 +23,7 @@ const FeaturedNews = () =>
               publicationName={article.publication}
               snippet={article.excerpt}
               title={article.title}
+              url={article.url}
             />
           )
         })

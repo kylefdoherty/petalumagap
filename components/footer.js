@@ -24,7 +24,7 @@ const MainFooter = () => {
   }
 
   return (
-    <Footer id='footer' style={{ background: '#2b2a2a', paddingBottom: '1em' }}>
+    <Footer id='footer' style={{ background: '#2b2a2a', paddingBottom: '1em', paddingTop: '5em' }}>
       <Container style={{ width: '80%' }}>
         <Columns isCentered style={{ justifyContent: 'space-between', marginBottom: '4em' }}>
           <Column isSize={3}>
