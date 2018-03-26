@@ -35,6 +35,14 @@ import MainLayout from '../layouts/main'
 import MainHero from '../components/main-hero'
 import AllGapWineries from '../containers/all-gap-wineries'
 
+const GapWineriesTitle = `Petaluma Gap Wineries -
+      The Closest Wineries to San Francisco | PetalumaGap.wine`
+const GapWineriesDescription = `
+  Petaluma Gap wineries are only 30 miles north of San Francisco. In addition to
+  being the closest wineries to San Francisco they're also producing some of the
+  most interesting wines in California.`
+
+
 class Wineries extends Component {
   render() {
     const subTitleStyles = {
@@ -43,7 +51,10 @@ class Wineries extends Component {
     }
 
     return (
-      <MainLayout>
+      <MainLayout
+        title={GapWineriesTitle}
+        description={GapWineriesDescription}
+      >
         <MainHero minHeight="400px">
           <Title style={{ color: 'white' }}>
             Petaluma Gap Wineries

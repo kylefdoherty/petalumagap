@@ -8,7 +8,7 @@ import MainFooter from '../components/footer'
 
 const defaultContainerStyles = {
   margin: '0',
-  height: '2000px',
+  minHeight: '500px',
 }
 
 const defaultFooterStyles = {
@@ -16,10 +16,13 @@ const defaultFooterStyles = {
   background: 'honeydew',
 }
 
-const MainLayout = ({ children, containerStyles }) =>
+const MainLayout = ({ children, containerStyles, title, description }) =>
   <main>
-    <Header />
-    <Container isFluid style={containerStyles || defaultContainerStyles}>
+    <Header title={title} description={description} />
+    <Container
+      isFluid
+      style={containerStyles || defaultContainerStyles}
+    >
       <Nav />
       {children}
       <MainFooter/>
