@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Link from 'next/link'
 import {
   Button,
   Container,
@@ -61,8 +62,12 @@ class Nav extends Component {
           style={{ background: 'white' }}
           isActive={this.state.menuIsOpen}
         >
-          <NavbarItem href='/'>Home</NavbarItem>
-          <NavbarItem href='/wineries'>Wineries</NavbarItem>
+          <Link prefetch href="/">
+            <NavbarItem>Home</NavbarItem>
+          </Link>
+          <Link prefetch href="/wineries">
+            <NavbarItem>Wineries</NavbarItem>
+          </Link>
         </NavbarMenu>
       </Navbar>
     )

@@ -12,7 +12,7 @@ const gapFeatures = [
   {
     iconClass: 'icon-wine',
     feature: 'Pinot Noir',
-    description: 'The unique climate of the Gap makes for some intense Pinot Noirs that truly standout. The Gap also proudces outstanding Syrahs and Chardonnays.'
+    description: 'The unique climate of the Gap makes for some bold Pinot Noirs that truly standout. The Gap also proudces outstanding Syrahs and Chardonnays.'
   }
 ]
 

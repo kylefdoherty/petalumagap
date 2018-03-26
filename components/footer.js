@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import {
   Footer,
   Container,
@@ -32,8 +33,16 @@ const MainFooter = () => {
               Pages
             </Title>
             <ul>
-              <li style={liStyles}><a style={linkStyles} href="/">Home</a></li>
-              <li style={liStyles}><a style={linkStyles} href="/wineries">Wineries</a></li>
+              <li style={liStyles}>
+                <Link prefetch href="/">
+                  <a style={linkStyles}>Home</a>
+                </Link>
+              </li>
+              <li style={liStyles}>
+                <Link prefetch href="/wineries">
+                  <a style={linkStyles}>Wineries</a>
+                </Link>
+              </li>
             </ul>
           </Column>
           <Column isSize={3}>
@@ -41,8 +50,16 @@ const MainFooter = () => {
               Terms & Privacy
             </Title>
             <ul>
-              <li style={liStyles}><a style={linkStyles} href="/terms">Terms of Use</a></li>
-              <li style={liStyles}><a style={linkStyles} href="/privacy-policy">Privacy Policy</a></li>
+              <li style={liStyles}>
+                <Link prefetch href="/terms">
+                  <a style={linkStyles}>Terms of Use</a>
+                </Link>
+              </li>
+              <li style={liStyles}>
+                <Link prefetch href="/privacy-policy">
+                  <a style={linkStyles}>Privacy Policy</a>
+                </Link>
+              </li>
             </ul>
           </Column>
           <Column isSize={3}>
