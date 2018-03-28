@@ -65,6 +65,15 @@ const GapFeatures = () =>
         align-items: center;
         justify-content: center;
       }
+
+      @media (max-width: 769px) {
+        .main-hero {
+          background-image:
+          linear-gradient(rgba(59,85,230, 0.70), rgba(59,85,230, 0.70)),
+          url(/static/images/sonoma-coast-fog_mobile.jpg);
+        }
+      }
+
       .main-hero__sub-title {
         color: white;
         padding: 0 10px 0 10px;

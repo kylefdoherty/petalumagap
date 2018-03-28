@@ -12,6 +12,8 @@ class MainHero extends Component {
   render() {
     const { children, minHeight } = this.props
     const imgUrl = 'static/images/vineyard.jpg'
+    const mobileImgUrl = 'static/images/vineyard_mobile.jpg'
+
 
     return (
       <Fragment>
@@ -33,6 +35,14 @@ class MainHero extends Component {
             display: flex;
             align-items: center;
             justify-content: center;
+          }
+
+          @media (max-width: 769px) {
+            .main-hero {
+              background-image:
+              linear-gradient(rgba(59,85,230, 0.70), rgba(59,85,230, 0.70)),
+              url(${mobileImgUrl});
+            }
           }
         `}</style>
       </Fragment>
