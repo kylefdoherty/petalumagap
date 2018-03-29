@@ -87,6 +87,12 @@ class HomePage extends Component {
               margin-bottom 4em;
             }
 
+            @media (max-width: 769px) {
+              blockquote {
+                width: 90%;
+              }
+            }
+
             .quotation {
               font-size: 30px;
               quotes: '\\201C' '\\201D' '\\2018' '\\2019';
@@ -122,6 +128,13 @@ class HomePage extends Component {
               font-size: 1.5em;
               font-style: italic;
               color: black;
+            }
+
+
+            @media (max-width: 769px) {
+              footer {
+                text-align: center;
+              }
             }
           `}</style>
         </div>
