@@ -28,6 +28,7 @@ import MainLayout from '../layouts/main'
 import NewsCard from '../components/news-card'
 import SectionTitle from '../components/section-title'
 import WineryCard from '../components/winery-card'
+import GapStats from '../containers/gap-stats'
 
 const HomeTitle = 'Petaluma Gap Wines - Wind to Wine | PetalumaGap.wine'
 const HomeDescription = `
@@ -49,6 +50,7 @@ class HomePage extends Component {
     const subTitleStyles = {
       color: 'white',
       padding: '0 10px 0 10px',
+      fontSize: '22px',
     }
 
     return (
@@ -71,8 +73,61 @@ class HomePage extends Component {
            Checkout the Wineries
           </Button>
         </MainHero>
+        <div>
+          <blockquote><p className="quotation">
+            What’s remarkable about these Petaluma Gap wines is how the “wind tunnel” effect plays out in the bottle. The wind gives these late ripening grapes time to develop potent flavors, while allowing them to retain their crisp acidity.</p>
+            <footer>— Peg Melnik, Press Democrat</footer>
+          </blockquote>
+          <style jsx>{`
+            blockquote {
+              width: 70%;
+              margin: auto;
+              text-align: center;
+              margin-top: 6em;
+              margin-bottom 4em;
+            }
+
+            .quotation {
+              font-size: 30px;
+              quotes: '\\201C' '\\201D' '\\2018' '\\2019';
+              padding: 10px 20px;
+              line-height: 1.4;
+              color: black;
+            }
+            .quotation:before {
+              content: open-quote;
+              display: inline;
+              height: 0;
+              line-height: 0;
+              left: -10px;
+              position: relative;
+              top: 30px;
+              color: #ccc;
+              font-size: 3em;
+            }
+            .quotation::after {
+              content: close-quote;
+              display: inline;
+              height: 0;
+              line-height: 0;
+              left: 10px;
+              position: relative;
+              top: 35px;
+              color: #ccc;
+              font-size: 3em;
+            }
+            footer {
+              margin:0;
+              text-align: right;
+              font-size: 1.5em;
+              font-style: italic;
+              color: black;
+            }
+          `}</style>
+        </div>
         <FeaturedWineries />
         <GapFeatures />
+        <GapStats />
         <FeaturedNews />
       </MainLayout>
     )
