@@ -45,6 +45,10 @@ class Nav extends Component {
       fontWeight: 'bolder',
     }
 
+    const linkStyles = {
+      cursor: 'pointer',
+    }
+
     return (
       <Navbar style={navBarStyles}>
         <NavbarBrand style={{ minHeight: '4em' }}>
@@ -63,10 +67,13 @@ class Nav extends Component {
           isActive={this.state.menuIsOpen}
         >
           <Link prefetch href="/">
-            <NavbarItem>Home</NavbarItem>
+            <NavbarItem style={linkStyles}>Home</NavbarItem>
           </Link>
           <Link prefetch href="/wineries">
-            <NavbarItem>Wineries</NavbarItem>
+            <NavbarItem style={linkStyles}>Wineries</NavbarItem>
+          </Link>
+          <Link prefetch href="/the-gap">
+            <NavbarItem style={linkStyles}>The Gap</NavbarItem>
           </Link>
         </NavbarMenu>
       </Navbar>

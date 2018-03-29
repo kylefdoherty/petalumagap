@@ -1,23 +1,40 @@
 ## TODO
-- make bg images work on mobile
-- setup ability to build static site and push to S3
+- retargeting pixels
+
+
+
+
 - Setup email
 
+## DEV TOOLS TODOS
+- setup ability to build static site and push to S3
 - setup linter
 - setup prettier
-
-
-## ALL IDEAS
-- create SEO checklist
-- create a content plan & map to SEO terms
-- create FeatureStats component
-- setup Bulma settings to use fonts and colors I want
-- retargeting pixels
-- add city to winery card on wineries page
-- Make it a progressive app
-- audit the site for keywords, links, etc.
 - setup testing
 - setup flow
+
+
+## NICE TO HAVES
+- setup Bulma settings to use fonts and colors I want
+- create SEO checklist
+- create a content plan & map to SEO terms
+- add city to winery card on wineries page
+- Make it a progressive app
+- create FeatureStats component
+
+## ALL IDEAS
+
+
+
+
+
+
+- audit the site for keywords, links, etc.
+
+
+
+
+
 
 
 ## DONE
@@ -26,6 +43,8 @@
 - Terms & Privacy Pages
 - setup titles, meta descriptions, etc.
 - setup about page (coming soon)
+- make bg images work on mobile
+
 
 
 ## Petaluma Gap Keywords
