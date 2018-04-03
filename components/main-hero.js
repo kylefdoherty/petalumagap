@@ -40,8 +40,15 @@ class MainHero extends Component {
           @media (max-width: 769px) {
             .main-hero {
               background-image:
-              linear-gradient(rgba(59,85,230, 0.70), rgba(59,85,230, 0.70)),
-              url(${mobileImgUrl});
+                linear-gradient(rgba(59,85,230, 0.70), rgba(59,85,230, 0.70)),
+                url(${mobileImgUrl});
+              background-position: center center;
+              background-repeat: no-repeat;
+              background-attachment: scroll;
+              background-size: cover;
+              display: flex;
+              align-items: center;
+              justify-content: center;
             }
           }
         `}</style>
