@@ -66,7 +66,9 @@ const MainFooter = () => {
             <Title isSize={5} style={titleStyles}>
               Get in Touch
             </Title>
-            <a style={linkStyles} href="mailto:petalumagapwine@gmail.com?Subject=Hello" target="_top">hello@petalumagap.wine</a>
+            <a style={linkStyles} href="mailto:petalumagapwine@gmail.com?Subject=Hello" target="_top">
+              Shoot Us an Email!
+            </a>
           </Column>
         </Columns>
         <Columns style={{ borderTop: '1px solid #bebebe'}}>

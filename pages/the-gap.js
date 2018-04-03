@@ -74,21 +74,6 @@ class TheGap extends Component {
             It is a literal 15-mile wide wind gap that cuts through the coastal mountains from Tomales and Bodega bays inland to Petaluma until it finally reaches San Pablo Bay. This wind tunnel creates a corridor for the coastal wind and fog to travel through cooling the region and causing large temperature swings throughout the day. All these variables create an environment for grapes that produce some truly unique flavors and is why the Petaluma Gap is responsible for some intense Pinot Noirs, Syrahs, and Chardonnays.
           </p>
           <h3>
-            What Causes the Wind?
-          </h3>
-          <p>
-            Sea Breezes or Onshore breezes are when the wind blows from a large body of water (the Pacific Ocean) towards a landmass (Petaluma). This happens because during the day land heats up faster than the ocean and causes the air to expand and become less dense.  Thus, the air pressure over land is less than that over the ocean causing it to flow inland.  The strength of the offshore wind is directly proportional to the temperature difference between the land and ocean. Now add in a 15-mile wind gap (tunnel) and it's as if you've opened the floodgates of a dam.
-          </p>
-          <h3>
-            What Causes the Fog?
-          </h3>
-          <p>
-            Coastal fog is largely caused by sea spray and airborne salt crystals from the salt water. Researchers have also found that Kelp seaweed releases iodine particles into the air which alongside the sea salt can become the nuclei (basis) for condensation of water vapor, creating fog.
-          </p>
-          <p>
-            The Sonoma Coast is thus a natural fog machine due to its large cliffs and rocks creating lots of ocean spray as the waves crash against them and it's abundant kelp beds. The fog generated in Tomales and Bodega Bays then is pushed through the Petaluma wind gap by the coastal breeze.
-          </p>
-          <h3>
             The Gap Climate
           </h3>
           <p>
@@ -106,6 +91,21 @@ class TheGap extends Component {
           </ul>
           <p>
             This near daily weather pattern results in harsh temperature swings of 40-50 degrees and means that the grapes in the Petaluma Gap are smaller, ripen later, and develop more intense flavors.
+          </p>
+          <h3>
+            What Causes the Wind?
+          </h3>
+          <p>
+            Sea Breezes or Onshore breezes are when the wind blows from a large body of water (the Pacific Ocean) towards a landmass (Petaluma). This happens because during the day land heats up faster than the ocean and causes the air to expand and become less dense.  Thus, the air pressure over land is less than that over the ocean causing it to flow inland.  The strength of the offshore wind is directly proportional to the temperature difference between the land and ocean. Now add in a 15-mile wind gap (tunnel) and it's as if you've opened the floodgates of a dam.
+          </p>
+          <h3>
+            What Causes the Fog?
+          </h3>
+          <p>
+            Coastal fog is largely caused by sea spray and airborne salt crystals from the salt water. Researchers have also found that Kelp seaweed releases iodine particles into the air which alongside the sea salt can become the nuclei (basis) for condensation of water vapor, creating fog.
+          </p>
+          <p>
+            The Sonoma Coast is thus a natural fog machine due to its large cliffs and rocks creating lots of ocean spray as the waves crash against them and it's abundant kelp beds. The fog generated in Tomales and Bodega Bays then is pushed through the Petaluma wind gap by the coastal breeze.
           </p>
         </Content>
         <style jsx>{`
