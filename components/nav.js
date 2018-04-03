@@ -51,11 +51,13 @@ class Nav extends Component {
 
     return (
       <Navbar style={navBarStyles}>
-        <NavbarBrand style={{ minHeight: '4em' }}>
-          <NavbarItem style={logoStyles}>
-            <img src="" />
-            Petaluma Gap
-          </NavbarItem>
+        <NavbarBrand style={{ ...linkStyles, minHeight: '4em' }}>
+          <Link prefetch href="/">
+            <NavbarItem style={logoStyles}>
+              <img src="" />
+              Petaluma Gap
+            </NavbarItem>
+          </Link>
           <NavbarBurger
             style={{ minHeight: '4em' }}
             isActive={this.state.menuIsOpen}
