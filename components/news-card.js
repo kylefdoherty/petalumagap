@@ -22,7 +22,7 @@ const NewsCard = ({
 }) =>
   <Column isSize={isSize}>
     <a href={url} target="_blank">
-      <Card style={{ borderBottom: '5px solid black' }}>
+      <Card style={{ borderBottom: '5px solid black', minHeight: '620px' }}>
         <CardHeader>
           <CardHeaderTitle>
             {publicationName}

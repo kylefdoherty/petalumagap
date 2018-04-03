@@ -1,24 +1,13 @@
 const featuredNews = [
   {
-    title: 'Expect intense pinot, syrah and chardonnay from Petaluma Gap',
-    excerpt: 'Is it possible to bottle the wind? In a word, yes. The Petaluma Gap winegrowers say they produce wines that reveal their wind-swept terroir, and I agree with them; the wind absolutely shows up in the bottle.',
-    publication: 'Press Democrat',
-    pubDate: 'December 8, 2017',
-    url: 'http://www.pressdemocrat.com/lifestyle/7666640-181/expect-intense-pinot-syrah-and',
+    title: 'A year overdue, Petaluma Gap wine region gains official recognition',
+    excerpt: 'At long last, wine growers in the Petaluma Gap area will be able to put “Petaluma Gap” on their wine labels, as the Petaluma Gap officially becomes California’s newest American Viticultural Area (AVA) on Friday, Dec. 8.',
+    publication: 'San Francisco Chronicle',
+    pubDate: 'December 6, 2017',
+    url: 'https://www.sfchronicle.com/wine/article/A-year-overdue-Petaluma-Gap-wine-region-gains-12411460.php',
     img: {
-      url: 'http://www.pressdemocrat.com/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=o_QhLvsnNfd6RuDNvTx7bM$daE2N3K4ZzOUsqbU5sYtm1t3kUZFfA9QaLcA_irerWCsjLu883Ygn4B49Lvm9bPe2QeMKQdVeZmXF$9l$4uCZ8QDXhaHEp3rvzXRJFdy0KqPHLoMevcTLo3h8xh70Y6N_U_CryOsw6FTOdKL_jpQ-&CONTENTTYPE=image/jpeg',
+      url: 'https://s.hdnux.com/photos/56/12/46/12102017/5/920x1240.jpg',
       altText: 'Petaluma Gap',
-    },
-  },
-  {
-    title: 'Petaluma Gap becomes new Sonoma County wine appellation',
-    excerpt: 'The federal government on Thursday recognized the Petaluma Gap as the newest American Viticultural Area (AVA), giving Sonoma County its 18th such wine appellation and providing another reminder of its vast diversity of grape growing throughout the region.',
-    publication: 'Press Democrat',
-    pubDate: 'December 7, 2017',
-    url: 'http://www.pressdemocrat.com/business/7736379-181/petaluma-gap-becomes-new-sonoma?ref=related',
-    img: {
-      url: 'http://www.pressdemocrat.com/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=OmHFs6nWVgxuIUSLwreZus$daE2N3K4ZzOUsqbU5sYvAbQUDSuW4CA23bZZmkUWNWCsjLu883Ygn4B49Lvm9bPe2QeMKQdVeZmXF$9l$4uCZ8QDXhaHEp3rvzXRJFdy0KqPHLoMevcTLo3h8xh70Y6N_U_CryOsw6FTOdKL_jpQ-&CONTENTTYPE=image/jpeg',
-      altText: 'Petaluma Gap Becomes AVA',
     },
   },
   {
@@ -30,6 +19,17 @@ const featuredNews = [
     img: {
       url: '/static/images/petaluma_gap_fog_small.jpg',
       altText: 'Aspen News - Petaluma Gap',
+    },
+  },
+  {
+    title: 'How The Wind Is Making The Petaluma Gap California\'s Newest Wine Region',
+    excerpt: 'Everyone knows that grapes are an essential ingredient for wine, but one natural — and unexpected — element is helping a newly designated wine region in California rise to prominence.',
+    publication: 'Forbes',
+    pubDate: 'April 2, 2018',
+    url: 'https://www.forbes.com/sites/jillbarth/2018/04/02/how-the-wind-is-making-petaluma-gap-californias-newest-wine-region/#671da8173927',
+    img: {
+      url: '/static/images/petaluma_gap_vineyard_night.jpg',
+      altText: 'Petaluma Gap - Forbes',
     },
   },
 ]
