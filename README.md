@@ -1,9 +1,6 @@
 ## TODO
+- create SEO checklist
 - retargeting pixels
-
-
-
-
 - Setup email
 
 ## DEV TOOLS TODOS
@@ -16,20 +13,9 @@
 
 ## NICE TO HAVES
 - setup Bulma settings to use fonts and colors I want
-- create SEO checklist
-- create a content plan & map to SEO terms
 - add city to winery card on wineries page
 - Make it a progressive app
-- create FeatureStats component
-
-## ALL IDEAS
-
-
-
-
-
-
-- audit the site for keywords, links, etc.
+-
 
 
 
@@ -47,6 +33,26 @@
 
 
 
+Pages
+
+1. Home
+ - Petaluma Wines - 100-1k - low
+ - Petaluma Chardonnay - 10-100 - low
+ - Petaluma Pinot Noir - 10-100 low
+ - Sonoma Coast wines - 100-1k - medium
+
+2. Wineries
+ - wineries near san francisco - 100-1k - low
+ - wineries close to san francisco - 100-1k - low
+ - wine tasting near san francisco - 100-1k - low
+
+3. The Gap
+  - petaluma gap - 100-1k
+  -
+
+
+
+
 ## Petaluma Gap Keywords
 
 1. Petaluma Wines - 100-1k - low
@@ -56,3 +62,7 @@
 5. wineries near san francisco - 100-1k - low
 6. wineries close to san francisco - 100-1k - low
 7. wine tasting near san francisco - 100-1k - low
+petaluma wine tours - 10-100
+gap wines - 100 - 1k
+
+
