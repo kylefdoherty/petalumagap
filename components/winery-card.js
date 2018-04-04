@@ -7,6 +7,7 @@ import {
   Subtitle,
   Title,
 } from 'bloomer'
+import LazyLoad from 'react-lazyload'
 
 const WineryCard = ({
   cardSize,
@@ -22,12 +23,17 @@ const WineryCard = ({
     <a href={wineryUrl} target="_blank">
       <Card>
         <CardImage>
-          <Image src={imgSrc} />
+          <LazyLoad height={200}>
+            <Image src={imgSrc} />
+          </LazyLoad>
         </CardImage>
         <CardContent>
-          <Subtitle isSize={subtitleSize}>
-            {subTitle}
-          </Subtitle>
+          {
+            subTitle &&
+              <Subtitle isSize={subtitleSize}>
+                {subTitle}
+              </Subtitle>
+          }
           <Title isSize={titleSize}>
             {title}
           </Title>

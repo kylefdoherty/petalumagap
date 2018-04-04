@@ -9,6 +9,7 @@ import {
   Image,
   Title,
 } from 'bloomer'
+import LazyLoad from 'react-lazyload'
 import truncate from 'truncate'
 
 const NewsCard = ({
@@ -29,7 +30,9 @@ const NewsCard = ({
           </CardHeaderTitle>
         </CardHeader>
         <CardImage>
-          <Image src={imgSrc} />
+          <LazyLoad height={200}>
+            <Image src={imgSrc} />
+          </LazyLoad>
         </CardImage>
         <CardContent>
           <Content>

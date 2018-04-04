@@ -12,6 +12,7 @@
     "numeral": "^2.0.6",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-lazyload": "^2.3.0",
     "react-visibility-sensor": "^3.11.0",
     "truncate": "^2.0.1"
   },
