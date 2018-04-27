@@ -77,6 +77,9 @@ class Nav extends Component {
           <Link prefetch href="/the-gap">
             <NavbarItem style={linkStyles}>The Gap</NavbarItem>
           </Link>
+          <Link prefetch href="/events">
+            <NavbarItem style={linkStyles}>Events</NavbarItem>
+          </Link>
         </NavbarMenu>
       </Navbar>
     )
